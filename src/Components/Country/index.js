@@ -43,7 +43,7 @@ const Country = () => {
              <h1 className='page-title'>
                 <AnimatedLetters
                     letterClass={letterClass}
-                    strArray={"Country".split("")}
+                    strArray={"Countries".split("")}
                     idx={15} />
              </h1>
              <div className="search-bar">
