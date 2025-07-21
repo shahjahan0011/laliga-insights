@@ -1,0 +1,102 @@
+.nav-bar{
+    background: #181818;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    min-width: 800px;
+
+    .logo{
+        display: block;
+        padding: 12px 14px;
+    
+        .logoimg{
+            display: block;
+            height: 80px;
+            width: auto;
+        }        
+    }
+
+    nav {
+        display: flex; 
+        align-items: center;
+        justify-content: space-evenly; 
+        padding-left: 0;
+        margin-left: 100px;
+        flex-grow: 1;
+
+        a{
+            font-size: 45px; 
+            color: #4d4e4e;
+            display: block; 
+            bottom: 75px;
+            margin: 0 50px; 
+            position: relative; 
+            text-decoration: none; 
+        
+            i {
+                transition: all 0.3s ease-out;
+            }
+
+            &:hover {
+                color: #fd4b42 ; 
+
+                svg{
+                    opacity: 0;
+                }
+
+                &:after{
+                    opacity: 1;
+                }
+            }
+
+            &:after{
+                content: '';
+                font-size: 20px;
+                letter-spacing: 4px;
+                position: absolute;
+                bottom: 10px;
+                display: block;
+                width: 100%;
+                text-align: center;
+                opacity: 0;
+                transform: all 0.3s ease-out;
+            }
+
+            &:first-child { 
+                &::after { 
+                    content: 'HOME'; 
+                }
+            }
+        }
+
+        a.team-link{
+            &::after{
+                content: 'TEAMS';
+            }
+        }
+
+        a.country-link{
+            &::after{
+                content: 'COUNTRY';
+            }
+        }
+
+        a.position-link{
+            &::after{
+                content: 'POSITIONS';
+            }
+        }
+
+        a.search-link{
+            &::after{
+                content: 'SEARCH';
+            }
+        }
+
+        a.active{
+            color: #fd4b42;
+        }
+    }
+}

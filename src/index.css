@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  font-family: 300 11PX/1.4 'Edges', 'sans-serif';
+  color: #c3dfe0;
+  background: #0d1821;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
