@@ -1,9 +1,15 @@
 import './index.scss';
 import TopBar from '../TopBar';
+import { Outlet } from 'react-router-dom';
 
 const Layout = () => {
     return(
-        <><TopBar/></>
+        <>
+        <div className='App'>
+        <TopBar/>
+        <Outlet/>
+        </div>
+        </>
     )
 }
 

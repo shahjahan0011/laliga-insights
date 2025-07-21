@@ -30,7 +30,7 @@
             font-size: 45px; 
             color: #4d4e4e;
             display: block; 
-            bottom: 75px;
+            bottom: 80px;
             margin: 0 50px; 
             position: relative; 
             text-decoration: none; 
@@ -54,12 +54,11 @@
             &:after{
                 content: '';
                 font-size: 20px;
-                letter-spacing: 4px;
+                letter-spacing: 2px;
                 position: absolute;
                 bottom: 10px;
                 display: block;
                 width: 100%;
-                text-align: center;
                 opacity: 0;
                 transform: all 0.3s ease-out;
             }

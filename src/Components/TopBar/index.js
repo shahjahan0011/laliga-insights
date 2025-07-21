@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import "./index.scss";
-import laliga2 from "../../assets/laliga-2.png";
+import laliga from "../../assets/laliga-2.png";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faFlag, faHome, faPeopleGroup, faSearch, faShirt } from '@fortawesome/free-solid-svg-icons'
 
@@ -10,7 +10,7 @@ const BottomBar = () => {
         <>
         <div className="nav-bar">
             <Link className="logo" to="/">
-            <img className="logoimg" src={laliga2} alt="Laliga"/>
+            <img className="logoimg" src={laliga} alt="Laliga"/>
             </Link>
             <nav>
                 <NavLink exact="true" activeclassname="active" to="/">
