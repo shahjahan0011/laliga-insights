@@ -6,6 +6,7 @@
     animation-delay: 1s;
     animation-fill-mode: forwards;
     min-width: 10px;
+    cursor: pointer;
   }
   
   .text-animate-hover {
@@ -19,7 +20,7 @@
     }
   }
   
-  @for $i from 1 through 35 {
+  @for $i from 1 through 100 {
     .text-animate._#{$i} {
       animation-delay: #{$i / 10}s;
     }

@@ -18,3 +18,30 @@
     animation: fadeIn 1s forwards; 
     animation-delay: 1s; 
 }
+
+.country-page {
+    
+        h1 {
+            font-size: 53px;
+            font-family: 'Heavitas';
+            color: #000;
+            font-weight: 500;
+            padding: 0 15px;
+            margin-top:60px;
+            position: relative;
+            margin-bottom: 5px;
+            left: 10px;
+            cursor: pointer;
+
+        .search-bar{
+            position: absolute;
+            margin-left: 20px;
+        }
+            
+        .text-animate-hover {
+            &:hover {
+                color: #fd4b42;
+            }
+        }
+    }
+}

@@ -16,7 +16,7 @@ const BottomBar = () => {
                 <NavLink exact="true" activeclassname="active" to="/">
                     <FontAwesomeIcon icon={faHome} />
                 </NavLink>
-                <NavLink exact="true" activeclassname="active" className="team-link" to="/team">
+                <NavLink exact="true" activeclassname="active" className="team-link" to="/teams">
                     <FontAwesomeIcon icon={faPeopleGroup} />
                 </NavLink>
                 <NavLink exact="true" activeclassname="active" className="country-link" to="/country">
