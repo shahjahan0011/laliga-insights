@@ -26,7 +26,7 @@ const Country = () => {
                             style={{ width: '100%', height: '100%', objectFit: 'cover'}}/>
                             <div className='content'>
                                 <p className='title'>{cout.name}</p>
-                                <h4 className='count'>{cout.count}</h4>
+                                <h4 className='count'>Number of players: {cout.count}</h4>
                                 <button className='btn'>View</button>
                             </div>
                         </div>

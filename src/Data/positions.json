@@ -1,0 +1,8 @@
+{
+  "position": [
+    {"cover": "/position/fw.jpg", "title": "Forwards"},
+    {"cover": "/position/mf.jpg", "title": "Mid Fielders"},
+    {"cover": "/position/df.jpg", "title": "Defenders"},
+    {"cover": "/position/gk.jpg", "title": "Goal Keepers"}
+  ]
+}

@@ -20,7 +20,8 @@
 }
 
 .container.country-page,
-.container.team-page {
+.container.team-page,
+.container.position-page {
 
             overflow: auto;
             scrollbar-width: none;
@@ -45,7 +46,7 @@
             height: 35px;
             padding: 2px 10px; 
             font-size: 20px;
-            animation: fadeIn 2s forwards;
+            animation: fadeIn 5s forwards;
 
             &::placeholder{
                 position: relative;
@@ -62,7 +63,3 @@
             }
         }
     }
-
-  .container.country-page::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Edge */
-}  
