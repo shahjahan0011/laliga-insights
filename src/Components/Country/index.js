@@ -15,25 +15,27 @@ const Country = () => {
         return () => clearTimeout(timer);
     })
 
-    // const renderCountries = (country) => {
-    //     return (
-    //         <div className='images-container'>
-    //             {
-    //                 country.map((cout, idx) => {
-    //                 return(
-    //                     <div className='image-box' key={idx}>
-    //                         <ReactCountryFlag countryCode={cout.code} svg style={{width:'50%',height:'50%'}}/>
-    //                         <div className='content'>
-    //                             <p className='title'>{cout.name}</p>
-    //                             <button className='btn'>View</button>
-    //                         </div>
-    //                     </div>
-    //                 )
-    //             })
-    //             }
-    //         </div>
-    //     )
-    // }
+    const renderCountries = (country) => {
+        return (
+            <div className='images-container'>
+                {
+                    country.map((cout, idx) => {
+                    return(
+                        <div className='image-box' key={idx}>
+                            <ReactCountryFlag className='flag' countryCode={cout.code} svg 
+                            style={{ width: '100%', height: '100%', objectFit: 'cover'}}/>
+                            <div className='content'>
+                                <p className='title'>{cout.name}</p>
+                                <h4 className='count'>{cout.count}</h4>
+                                <button className='btn'>View</button>
+                            </div>
+                        </div>
+                    )
+                })
+                }
+            </div>
+        )
+    }
 
     return (
         <>
@@ -51,7 +53,7 @@ const Country = () => {
                     />
                 </div>
              <div>
-                {/* {renderCountries(countryData.country)} */}
+                {renderCountries(countryData.country)}
              </div>
         </div>
         </>
