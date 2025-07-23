@@ -2,6 +2,7 @@ import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
 import positionData from '../../Data/positions.json';
+import { Link } from 'react-router-dom';
 
 const Positions = () => {
 
@@ -24,7 +25,9 @@ const Positions = () => {
                             <img className='posi-image' src={posi.cover} alt={posi.title}/>
                             <div className='content'>
                                 <p className='title'>{posi.title}</p>
-                                <button className='btn'>View</button>
+                                <Link to={`/data?position=${encodeURIComponent(posi.search)}`}>
+                                <button className='btn'>
+                                View </button></Link>
                             </div>
                         </div>
                     )

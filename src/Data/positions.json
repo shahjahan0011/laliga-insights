@@ -1,8 +1,8 @@
 {
   "position": [
-    {"cover": "/position/fw.jpg", "title": "Forwards"},
-    {"cover": "/position/mf.jpg", "title": "Mid Fielders"},
-    {"cover": "/position/df.jpg", "title": "Defenders"},
-    {"cover": "/position/gk.jpg", "title": "Goal Keepers"}
+    {"cover": "/position/fw.jpg", "title": "Forwards", "search": "FW"},
+    {"cover": "/position/mf.jpg", "title": "Mid Fielders", "search": "MF"},
+    {"cover": "/position/df.jpg", "title": "Defenders", "search": "DF"},
+    {"cover": "/position/gk.jpg", "title": "Goal Keepers", "search": "GK"}
   ]
 }

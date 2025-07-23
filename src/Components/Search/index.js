@@ -1,9 +1,10 @@
 import './index.scss';
 import AnimatedLetters from "../AnimatedLetters";
-import React, { useEffect, useState } from "react";
-
+import { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
 const Search = () => {
 
+    const [input, setInput] = useState('');
     const [letterClass, setLetterClass] = useState('text-animate');
     
     useEffect(() => {
@@ -22,16 +23,17 @@ const Search = () => {
                 <h1 className="page-title">
                     <br/>
                     <br/>
-                    <AnimatedLetters letterClass={letterClass} strArray={"Search".split("")} idx={15}/>
+                    <AnimatedLetters letterClass={letterClass} strArray={"Search & Compare".split("")} idx={15}/>
                 </h1>
                 <div className="search-bar2">
                     <input
                         type="text"
-                        placeholder="Search for players"
-                        // value={searchQuery}
-                        // onChange={handleSearchChange}
+                        placeholder="Search for Multiple Players   Eg:(raphinha,lamine,mbappe)"
+                        value={input}
+                        onChange={(val) => setInput(val.target.value)}
                     />
-                    <button >Go</button>
+                    <Link to={`/data?name=${encodeURIComponent(input)}`}>
+                    <button >Go</button></Link>
                 </div>
             </div>
         </>

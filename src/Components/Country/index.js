@@ -3,6 +3,7 @@ import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
 import countryData from '../../Data/countries.json';
 import { ReactCountryFlag } from 'react-country-flag';
+import { Link } from 'react-router-dom';
 
 const Country = () => {
     
@@ -27,7 +28,9 @@ const Country = () => {
                             <div className='content'>
                                 <p className='title'>{cout.name}</p>
                                 <h4 className='count'>Number of players: {cout.count}</h4>
-                                <button className='btn'>View</button>
+                                <Link to={`/data?country=${encodeURIComponent(cout.search)}`}>
+                                <button className='btn'>
+                                View </button></Link>
                             </div>
                         </div>
                     )
@@ -46,12 +49,12 @@ const Country = () => {
                     strArray={"Countries".split("")}
                     idx={15} />
              </h1>
-             <div className="search-bar">
+             {/* <div className="search-bar">
                     <input
                         type="text"
                         placeholder="Search for a country"
                     />
-                </div>
+                </div> */}
              <div>
                 {renderCountries(countryData.country)}
              </div>

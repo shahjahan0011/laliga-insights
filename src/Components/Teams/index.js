@@ -2,6 +2,7 @@ import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
 import teamData from '../../Data/teams.json';
+import { Link } from 'react-router-dom';
 
 const Teams = () => {
 
@@ -24,7 +25,9 @@ const Teams = () => {
                             <img className='team-image' src={team.cover} alt={team.name}/>
                             <div className='content'>
                                 <p className='title'>{team.title}</p>
-                                <button className='btn'>View</button>
+                                <Link to={`/data?team=${encodeURIComponent(team.search)}`}>
+                                <button className='btn'>
+                                View </button></Link>
                             </div>
                         </div>
                     )
@@ -43,12 +46,6 @@ const Teams = () => {
                     strArray={"Teams".split("")}
                     idx={15} />
              </h1>
-             <div className="search-bar">
-                    <input
-                        type="text"
-                        placeholder="Search for a team"
-                    />
-                </div>
              <div>
                 {renderTeams(teamData.team)}
              </div>
