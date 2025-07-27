@@ -20,7 +20,7 @@ const Api = () => {
       .find(item => item.value);
 
     if (query) {
-      axios.get(`http://localhost:8080/api/player?${query.key}=${encodeURIComponent(query.value)}`)
+      axios.get(`https://insights-backend-eb16fb69dde3.herokuapp.com/api/player?${query.key}=${encodeURIComponent(query.value)}`)
         .then(response => setPlayerData(response.data))
         .catch(error => setError(error))
         .finally(() => setLoading(false));
