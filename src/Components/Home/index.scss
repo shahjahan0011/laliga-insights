@@ -27,6 +27,17 @@
         animation: fadeIn 1s 1.8s backwards;
     }
 
+    .github {
+        // color: #fd4b42;
+        animation: fadeIn 1s 1.8s backwards;
+        white-space: nowrap;
+
+        &:hover {
+            // background: #fd4b42;
+            color: #fd4b42;
+        }
+    }
+
     .flat-button {
         color: #fd4b42;
         font-size: 18px;

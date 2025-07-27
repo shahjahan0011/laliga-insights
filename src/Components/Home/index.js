@@ -30,7 +30,12 @@ const Home = () => {
                 <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={15} /> 
                 </h1>
                 <h2> Love Football? You belong here! <br/>
-                     Find all the statistics in one place.
+                     All 2024-25 season statistics in one place. <br/><br/>
+                     <a className="github" href="https://github.com/shahjahan0011/laliga-insights" 
+                     target="_blank" 
+                     rel="noopener noreferrer" >
+                      Github
+                      </a>
                 </h2>
                 <Link className="flat-button" to="/Teams">Get Started</Link>
             </div>

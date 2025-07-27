@@ -90,8 +90,10 @@
         }
 
         a.search-link{
+            rotate: -90deg;
             &::after{
-                content: 'SEARCH';
+                content: 'COMPARE';
+                rotate: 90deg;
             }
         }
 

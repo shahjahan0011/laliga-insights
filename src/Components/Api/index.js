@@ -49,7 +49,7 @@ const Api = () => {
         return <p className="error-message">Error: {error.message}</p>;
     }
 
-    if (playerData.length === 0) {
+    if (playerData.length === null || playerData.length === 0) {
         return <p className="no-data-message">No players found.</p>;
     }
 

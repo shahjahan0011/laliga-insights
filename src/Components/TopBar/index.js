@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 import "./index.scss";
 import laliga from "../../assets/laliga-2.png";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import { faFlag, faHome, faPeopleGroup, faSearch, faShirt } from '@fortawesome/free-solid-svg-icons'
+import { faChartBar, faFlag, faHome, faPeopleGroup, faShirt } from '@fortawesome/free-solid-svg-icons'
 
 const BottomBar = () => {
 
@@ -26,7 +26,7 @@ const BottomBar = () => {
                     <FontAwesomeIcon icon={faShirt} />
                 </NavLink>
                 <NavLink exact="true" activeclassname="active" className="search-link" to="/search">
-                    <FontAwesomeIcon icon={faSearch} />
+                    <FontAwesomeIcon icon={faChartBar} />
                 </NavLink>
             </nav>
         </div>
