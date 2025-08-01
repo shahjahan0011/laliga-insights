@@ -7,6 +7,7 @@ import Positions from './Components/Positions';
 import Search from './Components/Search';
 import Country from './Components/Country';
 import Api from './Components/Api';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
     <Route path="/search" element={<Search />}/>
     </Route>
     </Routes>
+    <Analytics />
     </>
   );
 }
