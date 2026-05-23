@@ -20,6 +20,8 @@ function App() {
     <Route path="/country" element={<Country />}/>
     <Route path="/position" element={<Positions />}/>
     <Route path="/search" element={<Search />}/>
+    {/* Catch-all for undefined routes - only matches non-existent paths */}
+    <Route path="*" element={<Home />} />
     </Route>
     </Routes>
     <Analytics />
